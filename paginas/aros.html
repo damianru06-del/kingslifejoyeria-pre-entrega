@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aros Exclusivos - KingsLife</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">KingsLife</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="../index.html" class="nav__link">Inicio</a></li>
+                <li><a href="anillos.html" class="nav__link">Anillos</a></li>
+                <li><a href="aros.html" class="nav__link">Aros</a></li>
+                <li><a href="cadenas.html" class="nav__link">Cadenas</a></li>
+                <li><a href="pulseras.html" class="nav__link">Pulseras</a></li>
+                <li><a href="../index.html#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2 class="section-title">Colección de Aros</h2>
+            <div class="products__container">
+                
+                <article class="product-card">
+                    <img src="../imagenes/aros1.webp" alt="Aros Aureum Hoop" class="product-card__img">
+                    <h3 class="product-card__title">Aros Aureum Hoop - Art 1</h3>
+                    <p class="product-card__price">$620 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/aros2.webp" alt="Aros Luxury Stud" class="product-card__img">
+                    <h3 class="product-card__title">Aros Luxury Stud - Art 2</h3>
+                    <p class="product-card__price">$450 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/aros3.webp" alt="Aros Golden Drop" class="product-card__img">
+                    <h3 class="product-card__title">Aros Golden Drop - Art 3</h3>
+                    <p class="product-card__price">$710 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/aros4.webp" alt="Aros Elite Gold" class="product-card__img">
+                    <h3 class="product-card__title">Aros Elite Gold - Art 4</h3>
+                    <p class="product-card__price">$590 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/aros5.webp" alt="Aros Silver Drop" class="product-card__img">
+                    <h3 class="product-card__title">Aros Silver Drop - Art 5</h3>
+                    <p class="product-card__price">$310 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/aros6.webp" alt="Aros Silver Hoop" class="product-card__img">
+                    <h3 class="product-card__title">Aros Silver Hoop - Art 6</h3>
+                    <p class="product-card__price">$290 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+                <article class="product-card">
+                    <img src="../imagenes/aros7.webp" alt="Aros Moon Studs" class="product-card__img">
+                    <h3 class="product-card__title">Aros Moon Studs - Art 7</h3>
+                    <p class="product-card__price">$190 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/aros8.webp" alt="Aros Classic Silver" class="product-card__img">
+                    <h3 class="product-card__title">Aros Classic Silver - Art 8</h3>
+                    <p class="product-card__price">$240 USD</p>
+                    <a href="#encargo-aros" class="product-card__btn">Encargar</a>
+                </article>
+            </div>
+        </section>
+        <section id="encargo-aros" class="contact">
+            <h2 class="section-title">Orden de Encargo</h2>
+            <div class="contact__container">
+                
+                <form action="https://formspree.io/f/xkjobwbe" method="POST" class="contact__form">
+                    <h3 class="form-subtitle">Detalles del Pedido</h3>
+                    
+                    <label for="articulo">Artículo Seleccionado:</label>
+                    <select name="articulo_seleccionado" id="articulo" required>
+                        <option value="">-- Seleccioná un modelo de aros --</option>
+                        <option value="Aros Aureum Hoop - Art 1">Aros Aureum Hoop - Art 1 ($620 USD)</option>
+                        <option value="Aros Luxury Stud - Art 2">Aros Luxury Stud - Art 2 ($450 USD)</option>
+                        <option value="Aros Golden Drop - Art 3">Aros Golden Drop - Art 3 ($710 USD)</option>
+                        <option value="Aros Elite Gold - Art 4">Aros Elite Gold - Art 4 ($590 USD)</option>
+                        <option value="Aros Silver Drop - Art 5">Aros Silver Drop - Art 5 ($310 USD)</option>
+                        <option value="Aros Silver Hoop - Art 6">Aros Silver Hoop - Art 6 ($290 USD)</option>
+                        <option value="Aros Moon Studs - Art 7">Aros Moon Studs - Art 7 ($190 USD)</option>
+                        <option value="Aros Classic Silver - Art 8">Aros Classic Silver - Art 8 ($240 USD)</option>
+                    </select>
+                    
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre_cliente" required placeholder="Tu nombre completo">
+                    
+                    <label for="talle">Talle de Dedo (Solo para Anillos):</label>
+                    <select name="talle_anillo" id="talle" required>
+                        <option value="No aplica">No aplica (Cadenas/Aros/Pulseras)</option>
+                    </select>
+
+                    <label for="aclaraciones">Detalles del grabado o aclaraciones:</label>
+                    <textarea id="aclaraciones" name="aclaraciones" rows="4" placeholder="Alguna aclaración sobre el envío o empaque..."></textarea>
+                    
+                    <button type="submit" class="btn-order">Confirmar Encargo</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2026 KingsLife. Derechos reservados. Ningún elemento o compra debe ser tomado como real.</p>
+    </footer>
+</body>
+</html>

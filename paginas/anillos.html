@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anillos Exclusivos - KingsLife</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">KingsLife</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="../index.html" class="nav__link">Inicio</a></li>
+                <li><a href="anillos.html" class="nav__link">Anillos</a></li>
+                <li><a href="aros.html" class="nav__link">Aros</a></li>
+                <li><a href="cadenas.html" class="nav__link">Cadenas</a></li>
+                <li><a href="pulseras.html" class="nav__link">Pulseras</a></li>
+                <li><a href="../index.html#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2 class="section-title">Colección de Anillos</h2>
+            <div class="products__container">
+                
+                <article class="product-card">
+                    <img src="../imagenes/anillo1.webp" alt="Anillo de Oro Imperial" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Oro Imperial - Art 1</h3>
+                    <p class="product-card__price">$950 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo2.webp" alt="Anillo de Oro Royal" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Oro Royal - Art 2</h3>
+                    <p class="product-card__price">$1.100 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo3.webp" alt="Anillo de Oro Crown" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Oro Crown - Art 3</h3>
+                    <p class="product-card__price">$1.250 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo6.webp" alt="Anillo de Plata Sterling" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Plata Sterling - Art 6</h3>
+                    <p class="product-card__price">$210 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo7.webp" alt="Anillo de Plata Classic" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Plata Classic - Art 7</h3>
+                    <p class="product-card__price">$250 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo8.webp" alt="Anillo de Plata Line" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Plata Line - Art 8</h3>
+                    <p class="product-card__price">$280 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo11.webp" alt="Anillo de Platino Elite" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Platino Elite - Art 11</h3>
+                    <p class="product-card__price">$1.500 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo12.webp" alt="Anillo de Platino Aureum" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Platino Aureum - Art 12</h3>
+                    <p class="product-card__price">$1.750 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/anillo13.webp" alt="Anillo de Platino Signet" class="product-card__img">
+                    <h3 class="product-card__title">Anillo de Platino Signet - Art 13</h3>
+                    <p class="product-card__price">$1.900 USD</p>
+                    <a href="#encargo-anillos" class="product-card__btn">Encargar</a>
+                </article>
+
+            </div>
+        </section>
+        <section id="encargo-anillos" class="contact">
+            <h2 class="section-title">Orden de Encargo</h2>
+            <div class="contact__container">
+                
+                <form action="https://formspree.io/f/xkjobwbe" method="POST" class="contact__form">
+                    <h3 class="form-subtitle">Detalles del Pedido</h3>
+                    
+                    <label for="articulo">Artículo Seleccionado:</label>
+                    <select name="articulo_seleccionado" id="articulo" required>
+                        <option value="">-- Seleccioná un modelo de anillo --</option>
+                        
+                        <option value="Anillo de Oro Imperial - Art 1">Anillo de Oro Imperial - Art 1 ($950 USD)</option>
+                        <option value="Anillo de Oro Royal - Art 2">Anillo de Oro Royal - Art 2 ($1.100 USD)</option>
+                        <option value="Anillo de Oro Crown - Art 3">Anillo de Oro Crown - Art 3 ($1.250 USD)</option>
+                        <option value="Anillo de Plata Sterling - Art 6">Anillo de Plata Sterling - Art 6 ($210 USD)</option>
+                        <option value="Anillo de Plata Classic - Art 7">Anillo de Plata Classic - Art 7 ($250 USD)</option>
+                        <option value="Anillo de Plata Line - Art 8">Anillo de Plata Line - Art 8 ($280 USD)</option>
+                        <option value="Anillo de Platino Elite - Art 11">Anillo de Platino Elite - Art 11 ($1.500 USD)</option>
+                        <option value="Anillo de Platino Aureum - Art 12">Anillo de Platino Aureum - Art 12 ($1.750 USD)</option>
+                        <option value="Anillo de Platino Signet - Art 13">Anillo de Platino Signet - Art 13 ($1.900 USD)</option>
+                    </select>
+                    
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre_cliente" required placeholder="Tu nombre completo">
+                    
+                    <label for="talle">Talle de Dedo:</label>
+                    <select name="talle_anillo" id="talle" required>
+                        <option value="">-- Seleccioná tu talle --</option>
+                        <option value="S">Talle S (16mm)</option>
+                        <option value="M">Talle M (17mm)</option>
+                        <option value="L">Talle L (18mm)</option>
+                    </select>
+
+                    <label for="aclaraciones">Detalles del grabado o aclaraciones:</label>
+                    <textarea id="aclaraciones" name="aclaraciones" rows="4" placeholder="Si querés un grabado interno de iniciales o fecha, indicalo acá..."></textarea>
+                    
+                    <button type="submit" class="btn-order">Confirmar Encargo</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 KingsLife. Derechos reservados. Ningún elemento o compra debe ser tomado como real.</p>
+    </footer>
+</body>
+</html>

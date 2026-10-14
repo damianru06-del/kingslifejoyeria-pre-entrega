@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas Exclusivas - KingsLife</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">KingsLife</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="../index.html" class="nav__link">Inicio</a></li>
+                <li><a href="anillos.html" class="nav__link">Anillos</a></li>
+                <li><a href="aros.html" class="nav__link">Aros</a></li>
+                <li><a href="cadenas.html" class="nav__link">Cadenas</a></li>
+                <li><a href="pulseras.html" class="nav__link">Pulseras</a></li>
+                <li><a href="../index.html#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2 class="section-title">Colección de Cadenas</h2>
+            <div class="products__container">
+                
+                <article class="product-card">
+                    <img src="../imagenes/cadena1.webp" alt="Cadena Royale Link" class="product-card__img">
+                    <h3 class="product-card__title">Cadena Royale Link - Art 1</h3>
+                    <p class="product-card__price">$1.850 USD</p>
+                    <a href="#encargo-cadenas" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/cadena2.webp" alt="Cadena Venetian Gold" class="product-card__img">
+                    <h3 class="product-card__title">Cadena Venetian Gold - Art 2</h3>
+                    <p class="product-card__price">$2.100 USD</p>
+                    <a href="#encargo-cadenas" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/cadena3.jpg" alt="Cadena Slim Box" class="product-card__img">
+                    <h3 class="product-card__title">Cadena Slim Box - Art 3</h3>
+                    <p class="product-card__price">$1.350 USD</p>
+                    <a href="#encargo-cadenas" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/cadena4.webp" alt="Cadena Italian Rope" class="product-card__img">
+                    <h3 class="product-card__title">Cadena Italian Rope - Art 4</h3>
+                    <p class="product-card__price">$1.600 USD</p>
+                    <a href="#encargo-cadenas" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/cadena5.webp" alt="Cadena Silver Rope" class="product-card__img">
+                    <h3 class="product-card__title">Cadena Silver Rope - Art 5</h3>
+                    <p class="product-card__price">$420 USD</p>
+                    <a href="#encargo-cadenas" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/cadena6.webp" alt="Cadena Silver Iron" class="product-card__img">
+                    <h3 class="product-card__title">Cadena Silver Iron - Art 6</h3>
+                    <p class="product-card__price">$380 USD</p>
+                    <a href="#encargo-cadenas" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/cadena7.webp" alt="Cadena Heavy Silver" class="product-card__img">
+                    <h3 class="product-card__title">Cadena Heavy Silver - Art 7</h3>
+                    <p class="product-card__price">$490 USD</p>
+                    <a href="#encargo-cadenas" class="product-card__btn">Encargar</a>
+                </article>
+
+            </div>
+        </section>
+        <section id="encargo-cadenas" class="contact">
+            <h2 class="section-title">Orden de Encargo</h2>
+            <div class="contact__container">
+                
+                <form action="https://formspree.io/f/xkjobwbe" method="POST" class="contact__form">
+                    <h3 class="form-subtitle">Detalles del Pedido</h3>
+                    
+                    <label for="articulo">Artículo Seleccionado:</label>
+                    <select name="articulo_seleccionado" id="articulo" required>
+                        <option value="">-- Seleccioná un modelo de cadena --</option>
+                        <option value="Cadena Royale Link - Art 1">Cadena Royale Link - Art 1 ($1.850 USD)</option>
+                        <option value="Cadena Venetian Gold - Art 2">Cadena Venetian Gold - Art 2 ($2.100 USD)</option>
+                        <option value="Cadena Slim Box - Art 3">Cadena Slim Box - Art 3 ($1.350 USD)</option>
+                        <option value="Cadena Italian Rope - Art 4">Cadena Italian Rope - Art 4 ($1.600 USD)</option>
+                        <option value="Cadena Silver Rope - Art 5">Cadena Silver Rope - Art 5 ($420 USD)</option>
+                        <option value="Cadena Silver Iron - Art 6">Cadena Silver Iron - Art 6 ($380 USD)</option>
+                        <option value="Cadena Heavy Silver - Art 7">Cadena Heavy Silver - Art 7 ($490 USD)</option>
+                    </select>
+                    
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre_cliente" required placeholder="Tu nombre completo">
+                    
+                    <label for="talle">Talle de Dedo (Solo para Anillos):</label>
+                    <select name="talle_anillo" id="talle" required>
+                        <option value="No aplica">No aplica (Cadenas/Aros/Pulseras)</option>
+                    </select>
+
+                    <label for="aclaraciones">Detalles del grabado o aclaraciones:</label>
+                    <textarea id="aclaraciones" name="aclaraciones" rows="4" placeholder="Especificaciones de longitud o empaque..."></textarea>
+                    
+                    <button type="submit" class="btn-order">Confirmar Encargo</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2026 KingsLife. Derechos reservados. Ningún elemento o compra debe ser tomado como real.</p>
+    </footer>
+</body>
+</html>

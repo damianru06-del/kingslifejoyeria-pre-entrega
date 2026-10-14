@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulseras Exclusivas - KingsLife</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">KingsLife</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="../index.html" class="nav__link">Inicio</a></li>
+                <li><a href="anillos.html" class="nav__link">Anillos</a></li>
+                <li><a href="aros.html" class="nav__link">Aros</a></li>
+                <li><a href="cadenas.html" class="nav__link">Cadenas</a></li>
+                <li><a href="pulseras.html" class="nav__link">Pulseras</a></li>
+                <li><a href="../index.html#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2 class="section-title">Colección de Pulseras</h2>
+            <div class="products__container">
+                
+                <article class="product-card">
+                    <img src="../imagenes/pulcera1.webp" alt="Brazalete Aureum" class="product-card__img">
+                    <h3 class="product-card__title">Brazalete Aureum - Art 1</h3>
+                    <p class="product-card__price">$1.500 USD</p>
+                    <a href="#encargo-pulseras" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/pulcera2.webp" alt="Pulsera Gold Links" class="product-card__img">
+                    <h3 class="product-card__title">Pulsera Gold Links - Art 2</h3>
+                    <p class="product-card__price">$1.320 USD</p>
+                    <a href="#encargo-pulseras" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/pulcera3.webp" alt="Esclava Royale Gold" class="product-card__img">
+                    <h3 class="product-card__title">Esclava Royale Gold - Art 3</h3>
+                    <p class="product-card__price">$1.680 USD</p>
+                    <a href="#encargo-pulseras" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/pulcera4.webp" alt="Brazalete Silver Line" class="product-card__img">
+                    <h3 class="product-card__title">Brazalete Silver Line - Art 4</h3>
+                    <p class="product-card__price">$450 USD</p>
+                    <a href="#encargo-pulseras" class="product-card__btn">Encargar</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="../imagenes/pulcera5.webp" alt="Pulsera Silver Rope" class="product-card__img">
+                    <h3 class="product-card__title">Pulsera Silver Rope - Art 5</h3>
+                    <p class="product-card__price">$390 USD</p>
+                    <a href="#encargo-pulseras" class="product-card__btn">Encargar</a>
+                </article>
+
+            </div>
+        </section>
+        <section id="encargo-pulseras" class="contact">
+            <h2 class="section-title">Orden de Encargo</h2>
+            <div class="contact__container">
+                
+                <form action="https://formspree.io/f/xkjobwbe" method="POST" class="contact__form">
+                    <h3 class="form-subtitle">Detalles del Pedido</h3>
+                    
+                    <label for="articulo">Artículo Seleccionado:</label>
+                    <select name="articulo_seleccionado" id="articulo" required>
+                        <option value="">-- Seleccioná un modelo de pulsera --</option>
+                        
+                        <option value="Brazalete Aureum - Art 1">Brazalete Aureum - Art 1 ($1.500 USD)</option>
+                        <option value="Pulsera Gold Links - Art 2">Pulsera Gold Links - Art 2 ($1.320 USD)</option>
+                        <option value="Esclava Royale Gold - Art 3">Esclava Royale Gold - Art 3 ($1.680 USD)</option>
+                        
+                        <option value="Brazalete Silver Line - Art 4">Brazalete Silver Line - Art 4 ($450 USD)</option>
+                        <option value="Pulsera Silver Rope - Art 5">Pulsera Silver Rope - Art 5 ($390 USD)</option>
+                    </select>
+                    
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre_cliente" required placeholder="Tu nombre completo">
+                    
+                    <label for="talle">Talle de Dedo (Solo para Anillos):</label>
+                    <select name="talle_anillo" id="talle" required>
+                        <option value="No aplica">No aplica (Cadenas/Aros/Pulseras)</option>
+                    </select>
+
+                    <label for="aclaraciones">Detalles del grabado o aclaraciones:</label>
+                    <textarea id="aclaraciones" name="aclaraciones" rows="4" placeholder="Escribí acá si querés algún grabado específico..."></textarea>
+                    
+                    <button type="submit" class="btn-order">Confirmar Encargo</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2026 KingsLife. Derechos reservados. Ningún elemento o compra debe ser tomado como real.</p>
+    </footer>
+</body>
+</html>
